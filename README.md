@@ -20,7 +20,7 @@ npm run analyzer
 
 ## What's Included
 
- - LESS
+ - SASS
  - Spritesmith
 
 

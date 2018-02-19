@@ -12,18 +12,18 @@
     }
 </script>
 
-<style src="styles/main.less" lang="less"></style>
+<style src="styles/main.scss" lang="scss"></style>
 
-<style scoped lang="less" rel="stylesheet/less">
+<style scoped lang="scss">
 
-    @import (reference) "~styles/main.less";
+    @import "~styles/main";
 
     .App {
 
     }
     .App_logoSprite {
-        .sprite;
-        .sprite-lhs;
+        @include sprite;
+        @include sprite-lhs(0.5);
     }
 
     .App_logoStatic {

@@ -28,16 +28,19 @@ module.exports = (config) => {
                 'components': utils.resolve('src/app/components'),
                 'pages': utils.resolve('src/app/pages'),
                 'plugins': utils.resolve('src/app/plugins'),
+                'services': utils.resolve('src/app/services'),
                 'static': utils.resolve('src/static'),
                 'styles': utils.resolve('src/styles'),
+                'sprites': utils.resolve('src/sprites'),
             }
         },
 
         module: {
             rules: utils.require('rules', config, [
+                'images',
+                'styles',
                 'vue',
                 'scripts',
-                'images',
                 'fonts',
             ])
         },

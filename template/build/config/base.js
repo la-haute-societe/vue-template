@@ -11,8 +11,8 @@ module.exports = {
 
     sprite: {
         imagesFolder: path.resolve(spriteRootFolder, 'images'),
-        generatedImage: path.resolve(spriteRootFolder, 'generated', 'sprite.png'),
-        generatedStylesheet: path.resolve(spriteRootFolder, 'generated', 'sprite.less'),
+        generatedImage: path.resolve(spriteRootFolder, 'generated', 'sprite.[hash].png'),
+        generatedStylesheet: path.resolve(spriteRootFolder, 'generated', 'sprite.scss'),
         template: utils.resolve('build/templates/sprite.handlebars'),
     }
 

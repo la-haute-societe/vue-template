@@ -11,7 +11,7 @@
         name: 'index-page',
     }
 </script>
-<style scoped lang="less" rel="stylesheet/less">
+<style scoped lang="scss">
     .IndexPage {
 
     }

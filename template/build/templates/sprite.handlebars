@@ -1,15 +1,15 @@
-.sprite {
-  display:inline-block;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-image: url({{spritesheet.escaped_image}});
-  background-size: ({{spritesheet.px.width}}/2) ({{spritesheet.px.height}}/2);
+@mixin sprite($ratio:1) {
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('{{spritesheet.escaped_image}}');
+    background-size: ({{spritesheet.px.width}} * $ratio) ({{spritesheet.px.height}} * $ratio);
 }
-
 {{#sprites}}
-  .sprite-{{name}}{
-    width: ({{px.width}}/2);
-    height: ({{px.height}}/2);
-    background-position: ({{px.offset_x}}/2) ({{px.offset_y}}/2);
-  }
+@mixin sprite-{{name}}($ratio:1) {
+    @include sprite($ratio);
+    width: ({{px.width}} * $ratio);
+    height: ({{px.height}} * $ratio);
+    background-position: ({{px.offset_x}} * $ratio) ({{px.offset_y}} * $ratio);
+}
 {{/sprites}}
