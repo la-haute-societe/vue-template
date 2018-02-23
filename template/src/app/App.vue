@@ -1,7 +1,7 @@
 <template>
-    <div class="App">
-        <div class="App_logoSprite"></div>
-        <div class="App_logoStatic"></div>
+    <div class="app">
+        <div class="app__logoSprite"></div>
+        <div class="app__logoStatic"></div>
         <img src="~static/lhs.png" width="124" height="124">
         <router-view></router-view>
     </div>
@@ -12,21 +12,20 @@
     }
 </script>
 
-<style src="styles/main.scss" lang="scss"></style>
-
 <style scoped lang="scss">
 
-    @import "~styles/main";
+    @import "~styles/references";
 
-    .App {
+    .app {
 
     }
-    .App_logoSprite {
+
+    .app__logoSprite {
         @include sprite;
         @include sprite-lhs(0.5);
     }
 
-    .App_logoStatic {
+    .app__logoStatic {
         background: url('~static/lhs.png');
         background-size: 124px 124px;
         width: 124px;

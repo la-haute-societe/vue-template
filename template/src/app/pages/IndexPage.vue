@@ -1,5 +1,5 @@
 <template>
-    <div class="IndexPage">
+    <div class="index-page">
         <demo-component></demo-component>
     </div>
 </template>
@@ -12,7 +12,7 @@
     }
 </script>
 <style scoped lang="scss">
-    .IndexPage {
+    .index-page {
 
     }
 </style>

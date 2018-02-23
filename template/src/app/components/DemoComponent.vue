@@ -1,5 +1,5 @@
 <template>
-    <div class="DemoComponent">
+    <div class="demo-component">
         Demo
     </div>
 </template>
@@ -12,7 +12,10 @@
     }
 </script>
 <style scoped lang="scss">
-    .DemoComponent {
+
+    @import "~styles/references";
+
+    .demo-component {
 
     }
 </style>
