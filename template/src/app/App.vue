@@ -1,7 +1,7 @@
 <template>
     <div class="app">
-        <div class="app__logoSprite"></div>
-        <div class="app__logoStatic"></div>
+        <div class="app__logo-sprite"></div>
+        <div class="app__logo-static"></div>
         <img src="~static/lhs.png" width="124" height="124">
         <router-view></router-view>
     </div>
@@ -16,16 +16,13 @@
 
     @import "~styles/references";
 
-    .app {
+    .app {}
 
-    }
-
-    .app__logoSprite {
-        @include sprite;
+    .app__logo-sprite {
         @include sprite-lhs(0.5);
     }
 
-    .app__logoStatic {
+    .app__logo-static {
         background: url('~static/lhs.png');
         background-size: 124px 124px;
         width: 124px;

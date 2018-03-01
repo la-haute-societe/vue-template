@@ -1,6 +1,6 @@
 <template>
     <div class="demo-component">
-        Demo
+        Demo Component
     </div>
 </template>
 <script>
